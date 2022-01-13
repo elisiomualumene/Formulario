@@ -61,7 +61,7 @@ const App = () => {
             <input type="text" name="username" placeholder="Username" value={formValues.username}
             onChange={handleChange}/>
           </div>
-
+          <p>{formErrors.username}</p>
           
           <div className="field">
             <label>Email</label>
@@ -69,13 +69,15 @@ const App = () => {
             onChange={handleChange}
             />
           </div>
-
+          <p>{formErrors.email}</p>
           
           <div className="field">
             <label>Password</label>
             <input type="password" name="password" placeholder="Password" value={formValues.password}
             onChange={handleChange}/>
           </div>
+          <p>{formErrors.password}</p>
+
           <button className="fluid ui button blue" type="Submit">Submit</button>
         </div>
       </form>
