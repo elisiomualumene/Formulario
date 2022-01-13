@@ -12,7 +12,6 @@ body{
     margin: auto;
     text-align: left;
     width: 350px;
-    height: 500px;
 }
 
 .container h1{
@@ -64,4 +63,38 @@ body{
     border-radius: .4rem;
     width:300px;
     margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.form p {
+    text-align: center;
+    font-weight: 700;
+    font-size: 15px;
+    color: red;
+}
+
+.message{
+    position: relative;
+    border: white solid;
+    top: 1rem;
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border-top-color: lightgreen;
+    border-bottom-color: lightgreen;
+    animation: spinner 2s infinite backwards;
+}
+
+@keyframes spinner {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+pre{
+    display: none;
 }
